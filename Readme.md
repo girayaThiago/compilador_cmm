@@ -1,4 +1,7 @@
-Trabalho de Compiladores
+Alunos:
+    Felipe Gomes Paradas
+    Guilherme Oliveira Loiola
+    Thiago Pereira Ribeiro Dantas
 
 Parte 1: Analisador léxico.
 
