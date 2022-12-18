@@ -1,7 +1,8 @@
 Alunos:
-    Felipe Gomes Paradas
-    Guilherme Oliveira Loiola
-    Thiago Pereira Ribeiro Dantas
+
+    Felipe Gomes Paradas,
+    Guilherme Oliveira Loiola,
+    Thiago Pereira Ribeiro Dantas,
 
 Parte 1: Analisador léxico.
 
