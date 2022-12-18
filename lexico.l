@@ -12,17 +12,17 @@ float [+-]?([0-9]+\.[0-9]*|\.[0-9]+)\n
 outro	.*
 
 %%
-"/*"\n?           		{ BEGIN(C_COMMENT); printf("entrou no estado do bloco\n");}
+"/*".*         		{ BEGIN(C_COMMENT); }
 <C_COMMENT>"*/" 	{ BEGIN(INITIAL); printf("; comentarios multilinha\n");}
 <C_COMMENT>\n   	{ }
 <C_COMMENT>.    	{ }
 
-{comment} 	{printf("comentario. Proximo token: \n");}
-{id}		{printf("Identificador. Proximo token: \n");}
-{int}		{printf("Inteiro. Proximo token: \n");}
-{float}		{printf("Float. Proximo token: \n");}
-[ \n\r\t] 		{  }
-{outro} {printf("Não sei. Proximo token: \n");}
+{comment} 			{printf("comentario. Proximo token: \n");}
+{id}				{printf("Identificador. Proximo token: \n");}
+{int}				{printf("Inteiro. Proximo token: \n");}
+{float}				{printf("Float. Proximo token: \n");}
+[ \n\r\t] 			{  }
+{outro} 			{printf("erro léxico\n");}
 
 %%
 /* recomendavel declarar sempre funcao yywrap() */
