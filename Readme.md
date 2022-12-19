@@ -11,4 +11,4 @@ Alterar o código do flex para identificar inteiros, comentários e numeros com 
 Modo de uso:
 
     - Com um computador possuindo flex e gcc instalados.
-    - Execute o comando `make`
+    - Execute o comando `make run` ou `make test`
