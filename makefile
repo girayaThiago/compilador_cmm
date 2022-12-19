@@ -1,13 +1,16 @@
-default: flex comp run
+default: flex compile
 
 flex:
 	flex lexico.l
 
-comp:
+compile:
 	gcc lex.yy.c
 
-run:
-	./a.out
+test: default
+	./a.out < input > output
+
+run: default
+	./a.out 
 
 bison:
 	bison -Wall language.y
